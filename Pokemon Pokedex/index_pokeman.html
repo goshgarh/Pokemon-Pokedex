@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokeman Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style_pokeman.css">
+</head>
+<body>
+    <h1>PokeMon Trainer--Shahdag </h1>
+    
+<div id = "dropdown" class="dropdown myDropdownBtn float-right">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        
+        <a class="dropdown-item my_all_links" href="#" onclick="document.getElementById('modal0123').style.display='block'">All Pokemon</a>
+        <a class="dropdown-item my_a_link" href="#" onclick="document.getElementById('modal01').style.display='block'">Pikachu</a>
+        <a class="dropdown-item my_a_link" href="#" onclick="document.getElementById('modal01').style.display='block'">Celebi</a>
+        <a class="dropdown-item my_a_link" href="#" onclick="document.getElementById('modal01').style.display='block'">Eevee</a>
+        
+      </div>
+</div>
+   
+    <div class="div1">
+<!--       <label for="inp">Enter Pokemon name:  </label>-->
+        <input  id="inp" type="text"  placeholder = "Enter Pokemon name: ... and then Click the button -->  ">
+        <button id = "inp_btn" type = "submit" onclick="document.getElementById('modal01').style.display='block'">Click It!</button>
+    </div>
+    
+<div class="w3-container">
+
+         <div id="modal0123" class="w3-modal" >
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright" onclick="document.getElementById('modal0123').style.display='none'">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom" style="width:30%">
+              
+                  <img src="images/pikachu.jpg" style="width:90%">
+                    <p class="pok1_hp"></p>
+                    <p class="pok1_attack"></p>
+                    <p class="pok1_defense"></p>
+                    <p class="pok1_abilities"></p>
+                  <img src="images/celebi.jpg" style="width:90%">
+                    <p class="pok2_hp"></p>
+                    <p class="pok2_attack"></p>
+                    <p class="pok2_defense"></p>
+                    <p class="pok2_abilities"></p>
+                  <img src="images/eevee.jpg" style="width:90%">
+                    <p class="pok3_hp"></p>
+                    <p class="pok3_attack"></p>
+                    <p class="pok3_defense"></p>
+                    <p class="pok3_abilities"></p>
+              
+            </div>
+          </div>
+         
+         
+          <div id="modal01" class="w3-modal">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright"  onclick="document.getElementById('modal01').style.display='none'">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom" style="width:30%">
+              
+                <img src="" class = "image"  style="width:90%">
+                
+                <p class="pok1_hp"></p>
+                <p class="pok1_attack"></p>
+                <p class="pok1_defense"></p>
+                <p class="pok1_abilities"></p>
+                
+                <button class="div_btn">Extra</button>
+                   
+                <div id="pok1_extra" class="pok1_extr">
+                    <p id="pok1_accuracy"></p>
+                    <p id="pok1_power"></p>
+                    <p id="pok1_priority"></p>
+
+                </div>
+              </div>
+          </div>
+          
+
+
+</div>  
+    
+    
+    <div class="div_footer">&copy; Pokemon Inc.</div>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js">
+    </script> 
+    <script src = "js_pokeman.js"></script>
+</body>
+</html>
