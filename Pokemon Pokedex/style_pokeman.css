@@ -8,7 +8,6 @@ body {
 
 h1 {
     text-align: center;
-    
 }
 
 .div1 {
@@ -16,20 +15,21 @@ h1 {
     width: 100%;
     height: 90vh;
     background-repeat: no-repeat;
-    background-size:cover;
-     
+    background-size: cover;
 }
 
 .myDropdownBtn {
     margin-right: 10px;
-    
 }
 
-.pok1_extr, .pok2_extr, .pok3_extr {
+.pok1_extr,
+.pok2_extr,
+.pok3_extr {
     display: none;
 }
 
-p, button {
+p,
+button {
     margin: 10px;
 }
 
@@ -40,7 +40,7 @@ button {
 }
 
 .div_footer {
-  margin-left: 10px;  
+    margin-left: 10px;
 }
 
 input {
@@ -52,7 +52,4 @@ input {
 input:focus {
     background-color: lightyellow;
     border-color: red;
-    
 }
-
-
